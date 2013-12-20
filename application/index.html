@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>Explorer</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.min.css" />
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+
+    <link rel="stylesheet" href="css/app.css">
+
+
+  </head>
+
+  <body class="app">
+
+      <section id="main" data-transition="fade">
+        <header>
+	<div data-role="header" data-theme="b" data-position="fixed">
+
+    		<h3>ALPHA EXPLORER</h3>
+
+		<a href="#" id="backBtn"><b>Atras</b></a>
+		<a href="#menu" data-rel="popup" data-role="button" data-inline="true" data-theme="b" data-transition="pop" class="ui-btn-right"><b>Menu</b></a>
+
+		<div data-role="popup" id="menu" data-theme="a" class="ui-corner-all">
+		    <form>
+		        <div style="padding:5px 5px; width:280px;">
+
+	<div data-role="navbar">
+<table width="100%">
+<tr>
+<td width="30%">
+<a href="#" id="refreshBtn" class="right" style="text-decoration:none;color:white">Refrescar</a>
+<td width="30%">
+<a href="#crea" id="crearBtn" data-rel="popup" data-transition="pop" class="right" style="text-decoration:none;color:white">&nbsp;&nbsp;&nbsp;Nuevo&nbsp;&nbsp;&nbsp;</a>
+<td width="30%">
+<a href="#" id="salirBtn" class="right" style="text-decoration:none;color:white">&nbsp;&nbsp;&nbsp;Salir&nbsp;&nbsp;&nbsp;</a>
+</tr>
+</table>
+	</div><!-- /navbar -->
+
+
+
+
+		        </div>
+		    </form>
+		</div>
+
+        <ul data-role="listview"><li id="path_root"></li></ul>
+
+	</div>        
+<style>
+ul { 
+list-style: none;
+margin: 0;
+padding: 0;
+}
+</style>
+
+
+
+
+	</header>
+
+
+
+<div data-role="popup" id="crea" class="ui-content" data-theme="d">
+    <form>
+<p>
+<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+<table>
+<tr>
+<td>
+<input type="text" id="nombre" name="nombre" placeholder="Nombre">
+<td>
+    <select name="ext" id="ext">
+        <option value=".txt">.txt</option>
+        <option value=".html">.html</option>
+    </select>
+</tr>
+</table>
+<input type="button" id="btncrear" name="btncrear" data-mini="true" placeholder="Nombre" value="Crear">
+</fieldset>
+</p>
+    </form>
+</div>
+
+
+<div data-role="popup" id="opciones" data-theme="a" class="ui-corner-all">
+    <form>
+        <div style="padding:10px 20px;width:190px">
+	<h2>
+
+	<a href="#" id="compartirsistemBtn" data-role="button">Abrir desde <br> Alpha Ex View</a>
+
+<div data-role="collapsible" data-theme="c" data-content-theme="d">
+	<h6>Compartir</h6>
+	<a href="#" id="compartirsistemBtn" data-role="button" data-corners="false" data-theme="b">App del Sistema</a>
+</div>
+
+	<a href="#" id="eliminarBtn" data-role="button">Borrar</a>
+
+
+
+
+
+	</h2>
+        </div>
+    </form>
+</div>
+
+	
+
+<div style="display:none">
+<select id="deviceStoragesList" class="select"></select>
+</div>
+        <article id="main-article" data-type="list" class="active dark list indented scroll">
+
+          <form>
+
+<table>
+<tr>
+<td WIDTH="4px"></td>
+<td>
+          <ul class="lista" id="item-list"></ul>
+</td>
+</tr>
+</table>
+          </form>
+        </article>
+      </section>
+
+
+
+
+
+            <a href="#" id="eliminarBtn" data-icon="right" class="right"></a>
+
+    <script type="text/javascript" src="js/engine.js"></script>
+
+
+  </body>
+</html>

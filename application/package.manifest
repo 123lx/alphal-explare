@@ -1,0 +1,9 @@
+{
+    "name": "Alpha Explorer",
+    "package_path" : "http://localhost/Alpha-Explorer-App/package/Alpha-Explorer-App.zip",
+    "version": "1.1",
+    "developer": {
+        "name": "jjazcarate",
+        "url": "http://www.alphasystem.com"
+    }
+}
