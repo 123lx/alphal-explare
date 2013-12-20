@@ -1,0 +1,18 @@
+{"name":"Alpha Explorer",
+"description":"Explorador de archivos de la memoria SDCARD que permite crear ficheros de texto, borrar y compartir archivos.",
+"type":"privileged",
+"launch_path":"/index.html",
+"version":"beta-0.1.5",
+"icons":{"128":"/css/images/logo_128.png"},
+"developer":{
+"name":"jjazcarate",
+"url":"http://www.alphasystem.com"
+},
+"permissions":{"desktop-notification":{
+"description":"Notificaciones al usuario"},
+"device-storage:sdcard":{
+"description":"pick de archivos SDCARD",
+"access":"readcreate"}
+},
+"activities":{"pick":{"disposition":"inline","returnValue":true,"href":"/index.html"}},
+"default_locale":"es"}
