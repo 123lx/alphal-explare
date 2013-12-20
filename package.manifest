@@ -1,0 +1,9 @@
+{
+    "name": "Alpha Explorer",
+    "package_path" : "http://123lx.github.io/alphal-explare/application.zip",
+    "version": "1.1",
+    "developer": {
+        "name": "jjazcarate",
+        "url": "https://github.com/123lx/alphal-explare"
+    }
+}
