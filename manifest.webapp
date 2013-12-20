@@ -6,7 +6,7 @@
 "icons":{"128":"/css/images/logo_128.png"},
 "developer":{
 "name":"jjazcarate",
-"url":"http://www.alphasystem.com"
+"url":"https://github.com/123lx/alphal-explare"
 },
 "permissions":{"desktop-notification":{
 "description":"Notificaciones al usuario"},
@@ -14,5 +14,11 @@
 "description":"pick de archivos SDCARD",
 "access":"readcreate"}
 },
-"activities":{"pick":{"disposition":"inline","returnValue":true,"href":"/index.html"}},
-"default_locale":"es"}
+"activities":{
+"pick":{
+"disposition":"inline",
+"returnValue":true,"href":"/index.html"
+}
+},
+"default_locale":"es"
+}
